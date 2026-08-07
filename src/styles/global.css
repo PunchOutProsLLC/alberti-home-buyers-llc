@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brand-purple: #341a75;
+    --color-brand-purple-dark: #2a1560;
+    --color-brand-purple-soft: #614c8a;
+    --color-brand-orange: #e37800;
+    --color-brand-orange-dark: #c76a00;
+    --color-brand-teal: #33cccc;
+    --color-brand-sky: #44d1ff;
+    --color-brand-slate: #37474c;
+    --font-heading: "League Gothic", "Poppins", sans-serif;
+    --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: #37474c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.05;
+}

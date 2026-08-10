@@ -2,18 +2,18 @@
 import '../styles/global.css';
 
 interface Props {
-  title?: string;
+  title?: string; description?: string;
 }
 
-const { title = 'Alberti Home Buyers LLC' } = Astro.props;
+const { title = 'Sell Your House Fast for Cash | Alberti Home Buyers LLC', description = 'Alberti Home Buyers LLC buys houses fast for cash in any condition. No commissions, no fees, no repairs. Get a free, no-obligation cash offer in 24 hours.' } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Alberti Home Buyers LLC - We buy houses fast for cash. No commission, no fees, no hassle." />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} /><link rel="canonical" href="https://albertihomebuyersllc.com/" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Alberti Home Buyers LLC" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content="https://albertihomebuyersllc.com/" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /><title>{title}</title>
   </head>

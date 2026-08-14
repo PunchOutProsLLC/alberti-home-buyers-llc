@@ -36,6 +36,12 @@ h1 { letter-spacing: 0.015em; font-size: 2.75rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
+/* Headings on the purple CTA background were forced dark purple by the
+   rule above, making them nearly invisible. Force white there. */
+.bg-brand-purple h1, .bg-brand-purple h2, .bg-brand-purple h3, .bg-brand-purple h4, .bg-brand-purple h5, .bg-brand-purple h6 {
+    color: #ffffff !important;
+}
+
 p { line-height: 1.8; letter-spacing: 0.4px; }
 
 a { transition: color 0.2s ease; }

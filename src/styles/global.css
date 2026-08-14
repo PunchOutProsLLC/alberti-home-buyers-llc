@@ -76,3 +76,38 @@ section { scroll-margin-top: 80px; }
     transform: translateY(-6px);
     box-shadow: 0 20px 45px -12px rgba(52, 26, 117, 0.35);
 }
+
+/* Phone Number Styling */
+a[href^="tel:"] {
+    font-size: 1.25rem !important;
+    font-weight: 900 !important;
+    color: #e37800 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.35rem;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(227, 120, 0, 0.2);
+}
+
+a[href^="tel:"]:hover {
+    background-color: #e37800;
+    color: #ffffff !important;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(227, 120, 0, 0.4);
+    text-shadow: none;
+}
+
+/* Extra bold phone numbers in headings and CTAs */
+.text-brand-orange a[href^="tel:"],
+.font-bold a[href^="tel:"] {
+    font-size: 1.35rem !important;
+}
+
+/* Hero section phone numbers */
+.text-4xl a[href^="tel:"],
+.text-5xl a[href^="tel:"] {
+    font-size: 2.25rem !important;
+    line-height: 1;
+}

@@ -19,19 +19,25 @@ body {
     color: #37474c;
     background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
+    font-style: italic;
+    letter-spacing: 0.3px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     text-transform: uppercase;
-    letter-spacing: 0.01em;
-    line-height: 1.05;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
     color: #341a75;
+    font-style: italic;
+    font-weight: 700;
 }
 
-h1 { letter-spacing: 0.005em; }
+h1 { letter-spacing: 0.015em; font-size: 2.75rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
 
-p { line-height: 1.7; }
+p { line-height: 1.8; letter-spacing: 0.4px; }
 
 a { transition: color 0.2s ease; }
 
@@ -44,26 +50,29 @@ section { scroll-margin-top: 80px; }
     font-weight: 700;
     padding: 0.85rem 2rem;
     border-radius: 9999px;
-    box-shadow: 0 8px 20px -6px rgba(227, 120, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 10px 25px -8px rgba(227, 120, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
     background-color: #c76a00;
-    transform: translateY(-2px);
-    box-shadow: 0 12px 26px -6px rgba(227, 120, 0, 0.55);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px -8px rgba(227, 120, 0, 0.7);
 }
 
 .card {
     background-color: #ffffff;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 10px 30px -12px rgba(52, 26, 117, 0.18);
-    border: 1px solid rgba(52, 26, 117, 0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    box-shadow: 0 12px 35px -15px rgba(52, 26, 117, 0.2);
+    border: 1.5px solid rgba(52, 26, 117, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f7fd 100%);
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px -12px rgba(52, 26, 117, 0.28);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px -12px rgba(52, 26, 117, 0.35);
 }

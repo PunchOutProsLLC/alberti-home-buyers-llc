@@ -45,12 +45,12 @@ section { scroll-margin-top: 80px; }
 
 .btn-primary {
     display: inline-block;
-    background-color: #e37800;
-    color: #ffffff;
+    background-color: #44d1ff;
+    color: #341a75;
     font-weight: 700;
     padding: 0.85rem 2rem;
     border-radius: 9999px;
-    box-shadow: 0 8px 20px rgba(227, 120, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(68, 209, 255, 0.3);
     transition: all 0.3s ease;
     font-style: italic;
     letter-spacing: 0.5px;
@@ -58,9 +58,10 @@ section { scroll-margin-top: 80px; }
 }
 
 .btn-primary:hover {
-    background-color: #c76a00;
+    background-color: #33cccc;
+    color: #341a75;
     transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(227, 120, 0, 0.4);
+    box-shadow: 0 12px 30px rgba(68, 209, 255, 0.4);
 }
 
 .card {
@@ -75,7 +76,7 @@ section { scroll-margin-top: 80px; }
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-    border-color: #e37800;
+    border-color: #44d1ff;
 }
 
 /* Phone Number Styling */
@@ -244,7 +245,7 @@ textarea:focus {
 }
 
 .text-brand-orange {
-    color: #e37800;
+    color: #44d1ff;
     font-weight: bold;
 }
 
@@ -259,7 +260,7 @@ h2::after {
     display: block;
     width: 60px;
     height: 3px;
-    background: #e37800;
+    background: #44d1ff;
     margin: 16px auto 0;
     border-radius: 2px;
 }
@@ -268,7 +269,7 @@ h2::after {
 input:focus,
 textarea:focus,
 select:focus {
-    box-shadow: 0 0 15px rgba(227, 120, 0, 0.2) !important;
+    box-shadow: 0 0 15px rgba(68, 209, 255, 0.3) !important;
 }
 
 /* Link hover effects */
@@ -277,7 +278,7 @@ a {
 }
 
 a:hover {
-    color: #e37800;
+    color: #44d1ff;
 }
 
 /* FLOATING ACTION BAR */

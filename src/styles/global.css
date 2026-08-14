@@ -97,6 +97,28 @@ a[href^="tel:"]:hover {
     text-decoration: underline;
     transform: scale(1.02);
 }
+/* BUG FIX: tel: links that are also solid-blue buttons (bg-brand-sky) were
+   getting the same blue text color as their background from the rule above,
+   making the label invisible. Force white text on those buttons, in both
+   normal and hover states (hover bg is brand-teal, so keep it white there too). */
+a.bg-brand-sky[href^="tel:"],
+a.bg-brand-sky[href^="tel:"]:hover {
+    color: #ffffff !important;
+}
+
+/* Big, prominent hero phone number */
+.hero-phone {
+    font-size: clamp(2.25rem, 6vw, 3.5rem) !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    display: inline-block;
+}
+
+/* Bigger nav call button */
+.nav-phone-btn {
+    font-size: 1.35rem !important;
+    padding: 1rem 2.25rem !important;
+}
 
 
 /* Smooth scrolling */

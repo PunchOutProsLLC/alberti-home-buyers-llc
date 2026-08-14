@@ -10,8 +10,8 @@
     --color-brand-teal: #33cccc;
     --color-brand-sky: #44d1ff;
     --color-brand-slate: #37474c;
-    --font-heading: "League Gothic", "Poppins", sans-serif;
-    --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Playfair Display", "Georgia", serif;
+    --font-body: "Open Sans", "Segoe UI", sans-serif;
 }
 
 body {

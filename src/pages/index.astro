@@ -45,7 +45,41 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Trust Bar --><section class="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-12 border-b-4 border-brand-orange"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">500+</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Homes Purchased</div></div><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">7 Days</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Average Closing</div></div><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">$0</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Fees or Commissions</div></div><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">24 hrs</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Offer Response</div></div></div></section>    <!-- Why Choose Us -->
+  <!-- Trust Bar --><section class="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-12 border-b-4 border-brand-orange"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">500+</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Homes Purchased</div></div><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">7 Days</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Average Closing</div></div><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">$0</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Fees or Commissions</div></div><div class="transform hover:scale-110 transition-transform duration-300"><div class="text-5xl font-heading font-black">24 hrs</div><div class="text-brand-orange text-sm font-bold tracking-wide mt-2 uppercase">Offer Response</div></div></div></section>    <!-- RECENT ACTIVITY FEED -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-4">Recent Sales Activity</h2>
+      <p class="text-center text-gray-600 mb-12 text-lg">Homes being purchased right now across Maryland</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div class="activity-item card border-l-4 border-brand-orange">
+          <p class="text-sm text-brand-orange font-bold">✅ Just Now</p>
+          <p class="font-bold mt-2">3-bed home in Baltimore</p>
+          <p class="text-gray-600 text-sm">Offer accepted: <span class="text-brand-orange font-bold">$285,000</span></p>
+          <p class="text-xs text-gray-500 mt-2">Closing in 10 days</p>
+        </div>
+        <div class="activity-item card border-l-4 border-brand-orange">
+          <p class="text-sm text-brand-orange font-bold">✅ 2 hours ago</p>
+          <p class="font-bold mt-2">2-bed condo in Towson</p>
+          <p class="text-gray-600 text-sm">Offer accepted: <span class="text-brand-orange font-bold">$165,000</span></p>
+          <p class="text-xs text-gray-500 mt-2">Closing in 7 days</p>
+        </div>
+        <div class="activity-item card border-l-4 border-brand-orange">
+          <p class="text-sm text-brand-orange font-bold">✅ 5 hours ago</p>
+          <p class="font-bold mt-2">4-bed house in Columbia</p>
+          <p class="text-gray-600 text-sm">Offer accepted: <span class="text-brand-orange font-bold">$425,000</span></p>
+          <p class="text-xs text-gray-500 mt-2">Closing in 14 days</p>
+        </div>
+        <div class="activity-item card border-l-4 border-brand-orange">
+          <p class="text-sm text-brand-orange font-bold">✅ Yesterday</p>
+          <p class="font-bold mt-2">Townhouse in Annapolis</p>
+          <p class="text-gray-600 text-sm">Offer accepted: <span class="text-brand-orange font-bold">$245,000</span></p>
+          <p class="text-xs text-gray-500 mt-2">Closing in 9 days</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
   <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-bold text-center mb-12">Why Choose Alberti Home Buyers?</h2>
@@ -63,6 +97,69 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-bold mb-4">✨ No Fees or Commission</h3>
           <p>We buy as-is. You don't pay any commissions, fees, or closing costs. Contact us: <a href="tel:443-327-9292" class="text-brand-orange font-bold hover:underline">443-327-9292</a></p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALBERTI vs TRADITIONAL COMPARISON -->
+  <section class="py-16 bg-gradient-to-r from-brand-purple-tint to-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-4">Alberti vs Traditional Real Estate</h2>
+      <p class="text-center text-gray-600 mb-12 text-lg">See why thousands choose us</p>
+
+      <div class="overflow-x-auto">
+        <table class="comparison-table w-full">
+          <thead>
+            <tr class="bg-brand-purple text-white">
+              <td class="font-black text-left text-lg p-4">Feature</td>
+              <td class="text-center font-bold">Alberti Home Buyers</td>
+              <td class="text-center font-bold">Traditional Real Estate</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Closing Time</td>
+              <td class="text-center"><span class="checkmark">✓</span> 7-14 days</td>
+              <td class="text-center"><span class="cross">✗</span> 30-60 days</td>
+            </tr>
+            <tr>
+              <td>Repairs Needed</td>
+              <td class="text-center"><span class="checkmark">✓</span> None - buy as-is</td>
+              <td class="text-center"><span class="cross">✗</span> Often required</td>
+            </tr>
+            <tr>
+              <td>Commissions & Fees</td>
+              <td class="text-center"><span class="checkmark">✓</span> $0</td>
+              <td class="text-center"><span class="cross">✗</span> 6-10% total</td>
+            </tr>
+            <tr>
+              <td>Showings & Inspections</td>
+              <td class="text-center"><span class="checkmark">✓</span> One inspection</td>
+              <td class="text-center"><span class="cross">✗</span> Multiple showings</td>
+            </tr>
+            <tr>
+              <td>Certainty of Sale</td>
+              <td class="text-center"><span class="checkmark">✓</span> 100% guaranteed</td>
+              <td class="text-center"><span class="cross">✗</span> Financing contingent</td>
+            </tr>
+            <tr>
+              <td>Financing Issues</td>
+              <td class="text-center"><span class="checkmark">✓</span> We handle it</td>
+              <td class="text-center"><span class="cross">✗</span> Your responsibility</td>
+            </tr>
+            <tr>
+              <td>Cash in Pocket</td>
+              <td class="text-center"><span class="checkmark">✓</span> Full offer amount</td>
+              <td class="text-center"><span class="cross">✗</span> After all fees</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="tel:443-327-9292" class="inline-block bg-brand-orange text-white px-12 py-4 rounded-full font-black text-xl hover:bg-brand-orange-dark transform hover:scale-105 transition-all shadow-lg">
+          Get Your Free Comparison
+        </a>
       </div>
     </div>
   </section>

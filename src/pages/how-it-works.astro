@@ -3,6 +3,42 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="How It Works - Alberti Home Buyers LLC">
+  <!-- BEFORE/AFTER SHOWCASE -->
+  <section class="py-20 bg-gradient-to-b from-brand-purple-tint to-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-4">See Real Property Transformations</h2>
+      <p class="text-center text-gray-600 mb-12 text-lg">We buy homes in any condition and transform them</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- SLIDER 1 -->
+        <div>
+          <h3 class="font-bold text-center mb-4 text-lg">Downtown Baltimore Townhouse</h3>
+          <div class="before-after-container">
+            <img src="https://images.unsplash.com/photo-1553531088-cbb6f8d6efd9?w=500&h=500&fit=crop" alt="After" class="w-full h-auto">
+            <div class="img-before">
+              <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=500&h=500&fit=crop" alt="Before" class="w-full h-auto">
+            </div>
+            <div class="img-slider"></div>
+          </div>
+          <p class="text-center mt-4 text-sm text-gray-600">Drag to compare | We Paid: <span class="text-brand-orange font-bold">$185,000</span></p>
+        </div>
+
+        <!-- SLIDER 2 -->
+        <div>
+          <h3 class="font-bold text-center mb-4 text-lg">Northeast Property Investment</h3>
+          <div class="before-after-container">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=500&fit=crop" alt="After" class="w-full h-auto">
+            <div class="img-before">
+              <img src="https://images.unsplash.com/photo-1576576985261-9df0b8167f5e?w=500&h=500&fit=crop" alt="Before" class="w-full h-auto">
+            </div>
+            <div class="img-slider"></div>
+          </div>
+          <p class="text-center mt-4 text-sm text-gray-600">Drag to compare | We Paid: <span class="text-brand-orange font-bold">$245,000</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-bold text-center mb-4">How Our Process Works</h1>

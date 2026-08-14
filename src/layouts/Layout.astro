@@ -17,6 +17,62 @@ const { title = 'Sell Your House Fast for Cash | Alberti Home Buyers LLC', descr
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" /><title>{title}</title>
   <script async src="https://p3.trustedtv.com/4df4279d-8c9b-4e67-a797-6d68613b60ca.js"></script>
+  <script>
+    function toggleChat() {
+      const widget = document.getElementById('chatWidget');
+      if (widget.style.display === 'none') {
+        widget.style.display = 'flex';
+      } else {
+        widget.style.display = 'none';
+      }
+    }
+
+    function initBeforeAfterSlider() {
+      const sliders = document.querySelectorAll('.before-after-container');
+      sliders.forEach(slider => {
+        const imgSlider = slider.querySelector('.img-slider');
+        const imgBefore = slider.querySelector('.img-before');
+        let isActive = false;
+
+        document.addEventListener('mousedown', () => {
+          isActive = true;
+        });
+        document.addEventListener('mouseup', () => {
+          isActive = false;
+        });
+
+        imgSlider.addEventListener('mousedown', () => {
+          isActive = true;
+        });
+
+        slider.addEventListener('mousemove', (e) => {
+          if (!isActive) return;
+          let x = e.pageX - slider.getBoundingClientRect().left;
+          if (x < 0) x = 0;
+          if (x > slider.offsetWidth) x = slider.offsetWidth;
+          imgBefore.style.width = x + 'px';
+          imgSlider.style.left = x + 'px';
+        });
+
+        slider.addEventListener('touchstart', () => {
+          isActive = true;
+        });
+        slider.addEventListener('touchend', () => {
+          isActive = false;
+        });
+        slider.addEventListener('touchmove', (e) => {
+          if (!isActive) return;
+          let x = e.touches[0].pageX - slider.getBoundingClientRect().left;
+          if (x < 0) x = 0;
+          if (x > slider.offsetWidth) x = slider.offsetWidth;
+          imgBefore.style.width = x + 'px';
+          imgSlider.style.left = x + 'px';
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initBeforeAfterSlider);
+  </script>
   </head>
   <body class="bg-white text-gray-900">
     <!-- Header/Navigation -->
@@ -29,6 +85,7 @@ const { title = 'Sell Your House Fast for Cash | Alberti Home Buyers LLC', descr
           <a href="/" class="text-2xl font-bold text-brand-purple hidden sm:inline">Alberti Home Buyers</a>
         </div>
         <ul class="hidden md:flex gap-8">
+          <li><a href="/calculator" class="hover:text-brand-orange font-bold">Calculator</a></li>
           <li><a href="/how-it-works" class="hover:text-brand-orange">How It Works</a></li>
           <li><a href="/about" class="hover:text-brand-orange">About</a></li>
           <li><a href="/faq" class="hover:text-brand-orange">FAQ</a></li>
@@ -44,6 +101,39 @@ const { title = 'Sell Your House Fast for Cash | Alberti Home Buyers LLC', descr
     <main class="min-h-screen">
       <slot />
     </main>
+
+    <!-- FLOATING ACTION BAR -->
+    <div class="floating-action-bar">
+      <a href="tel:443-327-9292" class="floating-btn call" title="Call Us">
+        ☎️
+      </a>
+      <a href="https://wa.me/14433279292" target="_blank" rel="noopener noreferrer" class="floating-btn whatsapp" title="WhatsApp">
+        💬
+      </a>
+      <button class="floating-btn chat" onclick="toggleChat()" title="Live Chat">
+        💭
+      </button>
+    </div>
+
+    <!-- LIVE CHAT WIDGET -->
+    <div id="chatWidget" class="fixed bottom-32 right-8 bg-white rounded-lg shadow-2xl hidden z-40 w-80 h-96 flex flex-col" style="display: none;">
+      <div class="bg-brand-orange text-white p-4 rounded-t-lg flex justify-between items-center">
+        <div>
+          <h3 class="font-bold">Live Chat</h3>
+          <p class="text-sm opacity-90">We typically reply in minutes</p>
+        </div>
+        <button onclick="toggleChat()" class="text-white font-bold text-xl">×</button>
+      </div>
+      <div class="flex-1 overflow-y-auto p-4 bg-gray-50">
+        <div class="bg-blue-100 p-3 rounded-lg mb-3 rounded-br-none">
+          <p class="text-sm">Hi! 👋 How can we help you today?</p>
+          <p class="text-xs opacity-70 mt-1">2:30 PM</p>
+        </div>
+      </div>
+      <div class="border-t p-3 bg-white rounded-b-lg">
+        <input type="text" placeholder="Type a message..." class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-brand-orange">
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-16">

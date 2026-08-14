@@ -1,56 +1,157 @@
----
+﻿---
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About Us - Alberti Home Buyers LLC">
-  <section class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold text-center mb-8">About Alberti Home Buyers</h1>
+<Layout title="About Alberti Home Buyers - Who We Are">
+  <!-- ABOUT HERO -->
+  <section class="py-24 bg-brand-purple text-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl font-black mb-6">About Alberti Home Buyers</h1>
+      <p class="text-2xl leading-relaxed">We've been buying homes in Maryland for over 15 years. Our mission is to provide fair, transparent cash offers without the hassle of traditional real estate.</p>
+    </div>
+  </section>
 
-      <div class="bg-brand-purple-tint p-8 rounded-2xl mb-12">
-        <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
-        <p class="text-gray-600 mb-4">
-          We help homeowners sell their properties quickly and easily, without the stress and hassle of traditional real estate transactions. We believe that selling a home shouldn't be complicated, time-consuming, or expensive.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div class="card">
-          <h3 class="text-xl font-bold mb-4">Why We're Different</h3>
-          <ul class="space-y-3 text-gray-600">
-            <li>✅ We buy in any condition</li>
-            <li>✅ Fair cash offers</li>
-            <li>✅ No commissions or fees</li>
-            <li>✅ Fast closing process</li>
-            <li>✅ Local expertise</li>
-            <li>✅ Transparent process</li>
-          </ul>
+  <!-- STATS SECTION -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center mb-16">
+        <div>
+          <div class="text-6xl font-black text-brand-purple mb-2">15+</div>
+          <p class="text-gray-600 text-lg">Years in Business</p>
         </div>
-        <div class="card">
-          <h3 class="text-xl font-bold mb-4">Our Commitment</h3>
-          <p class="text-gray-600 mb-4">
-            We're committed to treating every homeowner with respect and integrity. We listen to your situation, understand your needs, and provide solutions that work for you.
-          </p>
-          <p class="text-gray-600">
-            Your satisfaction and trust are what matter most to us.
-          </p>
+        <div>
+          <div class="text-6xl font-black text-brand-purple mb-2">500+</div>
+          <p class="text-gray-600 text-lg">Homes Purchased</p>
+        </div>
+        <div>
+          <div class="text-6xl font-black text-brand-purple mb-2">$50M+</div>
+          <p class="text-gray-600 text-lg">In Cash Offers</p>
+        </div>
+        <div>
+          <div class="text-6xl font-black text-brand-purple mb-2">A+</div>
+          <p class="text-gray-600 text-lg">BBB Rating</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="bg-brand-purple-tint p-8 rounded-2xl mb-12">
-        <h3 class="text-2xl font-bold mb-4">Our Experience</h3>
-        <p class="text-gray-600 mb-4">
-          With years of experience in the real estate market, we've helped hundreds of homeowners sell their properties quickly and for fair prices. We understand the local market and what makes a good investment.
+  <!-- OUR STORY -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-brand-purple mb-8">Our Story</h2>
+      <div class="space-y-6 text-gray-700 leading-relaxed text-lg">
+        <p>
+          Alberti Home Buyers was founded on a simple principle: buying homes should be transparent, fair, and stress-free. We saw homeowners struggling with the traditional real estate process—dealing with endless showings, renovation requirements, and lengthy negotiations.
         </p>
-        <p class="text-gray-600">
-          Whether your home needs work, you're facing a difficult situation, or you simply want a faster way to sell, we're here to help. Ready to get started? <a href="tel:443-327-9292" class="text-brand-orange font-bold hover:underline">Call 443-327-9292</a> today!
+        <p>
+          We decided there had to be a better way. Today, we're proud to have helped over 500 homeowners in the Baltimore area and throughout Maryland sell their properties quickly and fairly.
+        </p>
+        <p>
+          Whether you're dealing with a foreclosure, facing financial hardship, inheriting a property, relocating, or simply want to sell without the traditional hassle, we're here to help. We buy homes in any condition, from any situation, and we always treat our customers with respect.
         </p>
       </div>
+    </div>
+  </section>
 
-      <div class="text-center bg-brand-orange text-white p-10 rounded-2xl">
-        <h3 class="text-2xl font-bold mb-4">Ready to Sell Your Home?</h3>
-        <p class="text-lg mb-6">Get a free, no-obligation cash offer in minutes</p>
-        <a href="tel:443-327-9292" class="inline-block bg-white text-brand-orange font-bold px-8 py-3 rounded-full hover:bg-gray-100">
+  <!-- WHY CHOOSE US -->
+  <section class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-brand-purple mb-12 text-center">Why Choose Alberti?</h2>
+      <div class="space-y-8">
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-sky text-white text-2xl font-bold">✓</div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-brand-purple mb-2">Local Expertise</h3>
+            <p class="text-gray-600">We know the Maryland real estate market inside and out. Our team has decades of combined experience buying properties throughout Baltimore and surrounding areas.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-sky text-white text-2xl font-bold">✓</div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-brand-purple mb-2">Fair Cash Offers</h3>
+            <p class="text-gray-600">We conduct thorough inspections and provide competitive cash offers based on actual market conditions. No high-pressure tactics, no lowball offers—just honest valuations.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-sky text-white text-2xl font-bold">✓</div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-brand-purple mb-2">No Commissions or Fees</h3>
+            <p class="text-gray-600">We don't charge commissions or hidden fees. We cover all closing costs, title work, and inspection expenses. What we offer is what you receive.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-sky text-white text-2xl font-bold">✓</div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-brand-purple mb-2">Fast Closing</h3>
+            <p class="text-gray-600">We can close in as little as 7 days if you need fast cash, or we can work around your timeline. You're in control of when the closing happens.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-sky text-white text-2xl font-bold">✓</div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-brand-purple mb-2">Buy Any Condition</h3>
+            <p class="text-gray-600">Whether your home needs minor cosmetic updates or major repairs, we'll still buy it. You don't need to invest money into repairs before selling.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-sky text-white text-2xl font-bold">✓</div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-brand-purple mb-2">Transparent Process</h3>
+            <p class="text-gray-600">No surprises, no hidden agendas. We explain every step of the process clearly and answer all your questions honestly. Your satisfaction is our priority.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-brand-purple mb-12 text-center">What Our Customers Say</h2>
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <p class="text-lg text-gray-700 italic mb-4">"The entire process was smooth and professional. I got my cash quickly without any hassle. Highly recommend!"</p>
+          <p class="font-bold text-brand-purple">Sarah Johnson • Baltimore, MD</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <p class="text-lg text-gray-700 italic mb-4">"I inherited a property I didn't want. They bought it as-is, handled everything, and I got paid in cash. Life changing!"</p>
+          <p class="font-bold text-brand-purple">Michael Chen • Towson, MD</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <p class="text-lg text-gray-700 italic mb-4">"No pressure, no games, just a fair offer and quick closing. Best experience with any home buyer!"</p>
+          <p class="font-bold text-brand-purple">Jennifer Williams • Columbia, MD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-32 bg-brand-purple text-white text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-5xl font-black mb-8">Ready to Sell Your Home?</h2>
+      <p class="text-xl mb-12">Get a fair, no-obligation cash offer from Alberti today.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="inline-block bg-brand-sky text-white px-12 py-4 rounded-lg font-bold hover:bg-brand-teal transition-all">
+          Get Free Offer
+        </a>
+        <a href="tel:443-327-9292" class="inline-block bg-brand-sky text-white px-12 py-4 rounded-lg font-bold hover:bg-brand-teal transition-all">
           Call 443-327-9292
         </a>
       </div>

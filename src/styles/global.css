@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-        --color-brand-purple: #16233f;
-        --color-brand-purple-dark: #0f1829;
-        --color-brand-purple-soft: #3f5064;
-        --color-brand-purple-tint: #eef1f5;
-        --color-brand-orange: #c69b44;
-        --color-brand-orange-dark: #a67f32;
-        --color-brand-teal: #0f1829;
-        --color-brand-sky: #16233f;
-        --color-brand-slate: #3f5064;
+        --color-brand-purple: #341a75;
+        --color-brand-purple-dark: #241154;
+        --color-brand-purple-soft: #6b52a3;
+        --color-brand-purple-tint: #f1ecfa;
+        --color-brand-orange: #f07f00;
+        --color-brand-orange-dark: #c96700;
+        --color-brand-teal: #094f6b;
+        --color-brand-sky: #0c6f96;
+        --color-brand-slate: #6b52a3;
         --color-brand-cream: #f2eee4;
         --color-brand-cream-soft: #fbfaf5;
         --font-heading: "Fraunces", "Georgia", serif;
@@ -26,7 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-heading);
         line-height: 1.15;
-        color: #16233f;
+        color: var(--color-brand-purple);
         font-weight: 600;
 }
 
@@ -53,7 +53,7 @@ section { scroll-margin-top: 80px; }
         font-weight: 700;
         padding: 0.85rem 2rem;
         border-radius: 9999px;
-        box-shadow: 0 8px 20px rgba(22, 35, 63, 0.25);
+        box-shadow: 0 8px 20px rgba(52, 26, 117, 0.25);
         transition: all 0.3s ease;
         letter-spacing: 0.3px;
         border: none;
@@ -63,21 +63,21 @@ section { scroll-margin-top: 80px; }
         background-color: var(--color-brand-purple-dark);
         color: #ffffff;
         transform: translateY(-2px);
-        box-shadow: 0 12px 30px rgba(22, 35, 63, 0.35);
+        box-shadow: 0 12px 30px rgba(52, 26, 117, 0.35);
 }
 
 .card {
         background-color: var(--color-brand-cream-soft);
         border-radius: 12px;
         padding: 2rem;
-        box-shadow: 0 4px 15px rgba(22, 35, 63, 0.08);
-        border: 1px solid rgba(22, 35, 63, 0.08);
+        box-shadow: 0 4px 15px rgba(52, 26, 117, 0.08);
+        border: 1px solid rgba(52, 26, 117, 0.08);
         transition: all 0.3s ease;
 }
 
 .card:hover {
         transform: translateY(-4px);
-        box-shadow: 0 12px 25px rgba(22, 35, 63, 0.15);
+        box-shadow: 0 12px 25px rgba(52, 26, 117, 0.15);
         border-color: var(--color-brand-orange);
 }
 
@@ -95,7 +95,7 @@ a[href^="tel:"] {
 
 a[href^="tel:"]:hover {
         color: var(--color-brand-orange-dark) !important;
-        background-color: rgba(198, 155, 68, 0.1);
+        background-color: rgba(240, 127, 0, 0.1);
         text-decoration: underline;
 }
 /* tel: links that are also solid navy buttons (bg-brand-sky) need to stay
@@ -150,10 +150,10 @@ html {
 
 @keyframes pulse-glow {
         0%, 100% {
-                    box-shadow: 0 0 0 0 rgba(198, 155, 68, 0.7);
+                    box-shadow: 0 0 0 0 rgba(240, 127, 0, 0.7);
         }
         50% {
-                    box-shadow: 0 0 0 15px rgba(198, 155, 68, 0);
+                    box-shadow: 0 0 0 15px rgba(240, 127, 0, 0);
         }
 }
 
@@ -186,7 +186,7 @@ button {
 button:hover {
         background-color: var(--color-brand-purple-dark);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(22, 35, 63, 0.3);
+        box-shadow: 0 4px 12px rgba(52, 26, 117, 0.3);
 }
 
 .btn-primary, a[class*="btn"] {
@@ -208,12 +208,12 @@ section::before {
         left: 0;
         right: 0;
         height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(22, 35, 63, 0.1), transparent);
+        background: linear-gradient(90deg, transparent, rgba(52, 26, 117, 0.1), transparent);
     }
 
 /* Section-specific gradients */
 .bg-brand-purple {
-        background: linear-gradient(135deg, #16233f 0%, #0f1829 100%) !important;
+        background: linear-gradient(135deg, var(--color-brand-purple) 0%, var(--color-brand-purple-dark) 100%) !important;
 }
 
 .bg-gray-50 {
@@ -239,7 +239,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
         border-color: var(--color-brand-orange) !important;
-        box-shadow: 0 0 20px rgba(198, 155, 68, 0.2) !important;
+        box-shadow: 0 0 20px rgba(240, 127, 0, 0.2) !important;
         transform: translateY(-2px);
 }
 
@@ -284,7 +284,7 @@ h2::after {
 input:focus,
 textarea:focus,
 select:focus {
-        box-shadow: 0 0 15px rgba(198, 155, 68, 0.3) !important;
+        box-shadow: 0 0 15px rgba(240, 127, 0, 0.3) !important;
 }
 
 /* Link hover effects */
@@ -344,7 +344,7 @@ a:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(198, 155, 68, 0.9);
+        background: rgba(240, 127, 0, 0.9);
         color: white;
         padding: 8px 12px;
         border-radius: 20px;
@@ -422,12 +422,12 @@ a:hover {
 
 .calculator-input:focus {
         border-color: var(--color-brand-orange);
-        box-shadow: 0 0 15px rgba(198, 155, 68, 0.2);
+        box-shadow: 0 0 15px rgba(240, 127, 0, 0.2);
         outline: none;
 }
 
 .calculator-result {
-        background: linear-gradient(135deg, #16233f 0%, #0f1829 100%);
+        background: linear-gradient(135deg, var(--color-brand-purple) 0%, var(--color-brand-purple-dark) 100%);
         color: white;
         padding: 24px;
         border-radius: 12px;
